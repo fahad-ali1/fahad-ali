@@ -17,6 +17,9 @@ const Portfolio = () => {
             <img src={IMG3} alt="" />
           </div>
           <h3>Personal Portfolio Website</h3>
+          <h5>Created personal website to learn ReactJS and to upload projects
+            I have worked on.
+          </h5>
           <div className="portfolio__item-buttons">
             <a href="https://github.com/fahad-ali1/Personal-Website-2" className='btn btn-primary' target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
@@ -27,6 +30,9 @@ const Portfolio = () => {
             <img src={IMG1} alt="" />
           </div>
           <h3>Class Scheduling App</h3>
+          <h5>Created an app using Python, PyQT5, among other python libraries.
+            Learned git and GitHub as well as how to work in a team.
+          </h5>
           <div className="portfolio__item-buttons">
             <a href="https://github.com/fahad-ali1/CMPT-395-Class-Scheduler" className='btn btn-primary' target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
@@ -37,6 +43,8 @@ const Portfolio = () => {
             <img src={IMG2} alt="" />
           </div>
           <h3>2D Space Shooter Game</h3>
+          <h5>Experimented with gaming physics using Python and Python Arcade Library.
+          </h5>
           <div className="portfolio__item-buttons">
             <a href="https://github.com/fahad-ali1/Space-Blaster" className='btn btn-primary' target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
