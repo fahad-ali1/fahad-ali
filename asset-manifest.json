@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/fahad-ali/static/css/main.e28e0f3a.css",
-    "main.js": "/fahad-ali/static/js/main.4e5ea4a9.js",
+    "main.css": "/fahad-ali/static/css/main.98680b53.css",
+    "main.js": "/fahad-ali/static/js/main.9eb91540.js",
     "static/media/personal-website-demo.png": "/fahad-ali/static/media/personal-website-demo.762a9ff376aa1585391d.png",
     "static/media/profile_icon.ico": "/fahad-ali/static/media/profile_icon.21b2c84656121b6a05a9.ico",
     "static/media/class-scheduler-demo.png": "/fahad-ali/static/media/class-scheduler-demo.27e194d8b12a2ab6650a.png",
     "static/media/space-blaster-demo.png": "/fahad-ali/static/media/space-blaster-demo.a9dcc4b9d030a719fee6.png",
     "index.html": "/fahad-ali/index.html",
-    "main.e28e0f3a.css.map": "/fahad-ali/static/css/main.e28e0f3a.css.map",
-    "main.4e5ea4a9.js.map": "/fahad-ali/static/js/main.4e5ea4a9.js.map"
+    "main.98680b53.css.map": "/fahad-ali/static/css/main.98680b53.css.map",
+    "main.9eb91540.js.map": "/fahad-ali/static/js/main.9eb91540.js.map"
   },
   "entrypoints": [
-    "static/css/main.e28e0f3a.css",
-    "static/js/main.4e5ea4a9.js"
+    "static/css/main.98680b53.css",
+    "static/js/main.9eb91540.js"
   ]
 }
