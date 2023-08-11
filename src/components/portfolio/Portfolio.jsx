@@ -21,7 +21,7 @@ const Portfolio = () => {
             I have worked on.
           </h5>
           <div className="portfolio__item-buttons">
-            <a href="https://github.com/fahad-ali1/Personal-Website-2" className='btn btn-primary' target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/fahad-ali1/fahad-ali" className='btn btn-primary' target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </article>
 
