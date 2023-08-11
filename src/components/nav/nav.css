@@ -1,5 +1,5 @@
 nav {
-    background: #3498db;
+    background: var(--accent-color);
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
@@ -19,15 +19,16 @@ nav a{
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-size: 1.1rem;
 }
 
 nav a:hover{
     background: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav a.active{
-    background: var(--background-color);
+    background: var(--primary-color);
     opacity: 65%;
 }
