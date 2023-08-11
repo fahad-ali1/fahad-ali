@@ -72,14 +72,9 @@ header{
         height: 90vh;
     }
 
+    .header__socials,
     .scroll__down{
         display: none;
-    }
-
-    .header__socials {
-        flex-direction: row;
-        gap: 1rem;
-        padding-left: 1rem;
     }
 }
 
