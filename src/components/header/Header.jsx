@@ -3,6 +3,7 @@ import './header.css'
 import CTA from './CTA'
 import PROFILE from '../../assets/images/profile_icon.ico'
 import HeaderSocials from './HeaderSocials'
+import {FaChevronCircleDown} from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
           <img src={PROFILE} alt="profile" />
         </div>
 
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+        <a href="#contact" className='scroll__down'><FaChevronCircleDown/>   Scroll</a>
       </div>
     </header>
   )
