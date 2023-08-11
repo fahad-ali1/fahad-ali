@@ -1,0 +1,37 @@
+footer{
+    background: var(--primary-color);
+    padding: 3rem 0;
+    text-align: center;
+    font: 1rem;
+    margin-top: 7rem;
+}
+
+footer a{
+    color: var(--text-color);
+}
+
+footer a:hover{
+    color: black;
+}
+
+.permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+    color: var(--text-color);
+}
+
+.footer__copyright{
+    margin-bottom: 4rem;
+    color: var(--background-color);
+}
+
+/* ------------ Media Queries (small) --------------- */
+@media screen and (max-width: 600px){
+    .permalinks{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
