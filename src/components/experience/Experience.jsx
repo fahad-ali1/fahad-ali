@@ -1,8 +1,8 @@
-import React from 'react'
-import './experience.css'
-import {AiFillCheckCircle} from 'react-icons/ai'
-import {AiOutlineArrowRight} from 'react-icons/ai'
-import {BsArrowRightSquareFill} from 'react-icons/bs'
+import React from 'react';
+import './experience.css';
+import { AiFillCheckCircle } from 'react-icons/ai';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { BsArrowRightSquareFill } from 'react-icons/bs';
 
 const Experience = () => {
   return (
@@ -12,18 +12,15 @@ const Experience = () => {
 
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>
-            Freelance Front End Development
-          </h3>
+          <h3>Freelance Front End Development</h3>
 
           <div className="experience__content">
-
             <article className='experience__details'>
-            <AiOutlineArrowRight className='experience__desc-icon'/> 
-            <div>
-              <h4>Developed front end application 
-              for the MacEwan School of Continuing Education.</h4>
-            </div>
+              <AiOutlineArrowRight className='experience__desc-icon'/> 
+              <div>
+                <h4>Developed front end application 
+                for the MacEwan School of Continuing Education.</h4>
+              </div>
             </article>
 
             <article className="experience__details">
@@ -55,31 +52,27 @@ const Experience = () => {
         <div className="portfolio">
           <h3>Other personal projects below!</h3>
 
-          <article className='experience__details'> 
+          <a href="#portfolio" className='experience__details bordered-article'> 
             <div>
-              <a href="#portfolio"><BsArrowRightSquareFill className='experience__desc-icon'/> Personal Portfolio Website</a>
+              <BsArrowRightSquareFill className='experience__desc-icon'/> Personal Portfolio Website
             </div>
-          </article>
+          </a>
 
-          <article className='experience__details'>
+          <a href="#portfolio" className='experience__details bordered-article'>
             <div>
-              <a href="#portfolio" ><BsArrowRightSquareFill className='experience__desc-icon'/>  2D Space Shooter Game</a>
+              <BsArrowRightSquareFill className='experience__desc-icon'/>  2D Space Shooter Game
             </div>
-          </article>
+          </a>
 
-          <article className='experience__details'> 
+          <a href="#portfolio" className='experience__details bordered-article'> 
             <div>
-              <a href="#portfolio"><BsArrowRightSquareFill className='experience__desc-icon'/> Class Scheduling App</a>
+              <BsArrowRightSquareFill className='experience__desc-icon'/> Class Scheduling App
             </div>
-          </article>
-
-
+          </a>
         </div>
-
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
