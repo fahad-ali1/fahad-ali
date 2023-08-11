@@ -52,23 +52,24 @@ const Experience = () => {
         <div className="portfolio">
           <h3>Other personal projects below!</h3>
 
-          <a href="#portfolio" className='experience__details bordered-article'> 
+          <a href="#website" className='experience__details bordered-article'> 
             <div>
               <BsArrowRightSquareFill className='experience__desc-icon'/> Personal Portfolio Website
             </div>
           </a>
 
-          <a href="#portfolio" className='experience__details bordered-article'>
+          <a href="#scheduler" className='experience__details bordered-article'> 
+            <div>
+              <BsArrowRightSquareFill className='experience__desc-icon'/> Class Scheduling App
+            </div>
+          </a>
+
+          <a href="#game" className='experience__details bordered-article'>
             <div>
               <BsArrowRightSquareFill className='experience__desc-icon'/>  2D Space Shooter Game
             </div>
           </a>
 
-          <a href="#portfolio" className='experience__details bordered-article'> 
-            <div>
-              <BsArrowRightSquareFill className='experience__desc-icon'/> Class Scheduling App
-            </div>
-          </a>
         </div>
       </div>
     </section>
