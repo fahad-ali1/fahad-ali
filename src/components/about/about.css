@@ -21,12 +21,14 @@
   
   .about__me {
     padding: 20px;
-  }
-  
-  .about__me {
+    text-align: left;
     font-size: 18px;
     line-height: 1.6;
     color: var(--text-color);
+  }
+
+  .about__me h4 {
+    margin-bottom: 10px; 
   }
 
   .btn {
