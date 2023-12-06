@@ -36,16 +36,19 @@ header{
 }
 
 /* ------------------ profile ---------------------- */
-.profile{
+.profile {
     background-color: var(--primary-color);
-    width: 22rem;
+    width: 14rem; 
+    max-width: 100%;
     height: auto;
     position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
+    left: 50%;
+    transform: translateX(-50%); 
+    margin-top: 2rem; 
     overflow: hidden;
-    border-radius: 6rem 6rem 0 0;
+    border-radius: 4rem 4rem 0 0; 
 }
+
 
 /* ------------------ scroll down ---------------------- */
 .scroll__down {
