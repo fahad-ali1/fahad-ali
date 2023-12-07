@@ -26,7 +26,7 @@ const Footer = () => {
       </ul>
       
       <div className="footer__copyright">
-        <small> &copy; Created by Fahad with help of <a href="https://www.patreon.com/egator" target="_blank" rel="noopener noreferrer">EGATOR</a></small>
+      <small>&copy; Created by <a href="https://www.linkedin.com/in/fahad-ali-421014219/" target="_blank" rel="noopener noreferrer">Fahad</a>. Inspired by <a href="https://www.patreon.com/egator" target="_blank" rel="noopener noreferrer">EGATOR</a></small>
       </div>
     </footer>
   )

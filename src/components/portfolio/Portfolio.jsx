@@ -3,6 +3,7 @@ import './portfolio.css';
 import IMG1 from '../../assets/images/projects/class-scheduler-demo.png';
 import IMG2 from '../../assets/images/projects/space-blaster-demo.png';
 import IMG3 from '../../assets/images/projects/personal-website-demo.png';
+import IMG4 from '../../assets/images/projects/property-assessment-app.png';
 
 const Portfolio = () => {
   return (
@@ -22,6 +23,19 @@ const Portfolio = () => {
           </h5>
           <div className="portfolio__item-buttons">
             <a href="https://github.com/fahad-ali1/fahad-ali" className='btn btn-primary' target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article id='scheduler' className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG4} alt="" />
+          </div>
+          <h3>Property Assessments Application</h3>
+          <h5>Created an app using Java, JavaFX, among other libraries to create assessments
+            of properties in Edmonton. Implemented Edmonton API, CSV parsing, and map details.
+          </h5>
+          <div className="portfolio__item-buttons">
+            <a href="https://github.com/fahad-ali1/PropertyAssessmentGUI" className='btn btn-primary' target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </article>
 
