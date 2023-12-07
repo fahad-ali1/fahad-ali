@@ -26,7 +26,7 @@ const Portfolio = () => {
           </div>
         </article>
 
-        <article id='scheduler' className='portfolio__item'>
+        <article id='propertyAssessments' className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={IMG4} alt="" />
           </div>
