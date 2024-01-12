@@ -21,7 +21,7 @@ const Experience = () => {
               <MdLanguage /> Languages
             </h3>
             <h3>
-              <FaTools /> Languages
+              <FaTools /> Tools
             </h3>
             <article className="experience__details">
               <MdLanguage className='experience__details-icon'/> 
