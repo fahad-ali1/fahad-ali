@@ -2,29 +2,29 @@ nav {
     background: var(--nav-color);
     width: max-content;
     display: block;
-    padding: 12px 28px;
+    padding: 1.2vh 3vh;
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 32px;
+    bottom: 2vh;
     display: flex;
-    gap: 12px;
-    border-radius: 48px;
+    gap: 3vh;
+    border-radius: 12vh;
     backdrop-filter: blur(24px);
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.4s ease; 
 }
 
 nav a {
     background: transparent;
-    padding: 12px;
-    border-radius: 24px; 
+    padding: 0.7vh;
+    border-radius: 12vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--first-color);
     font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 nav a:hover {
@@ -34,5 +34,5 @@ nav a:hover {
 nav a.active {
     background: #545454;
     opacity: 0.65;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+    transition: background-color 0.4s ease, opacity 0.4s ease;
 }

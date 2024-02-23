@@ -1,28 +1,34 @@
+/* Main landing */
 .header {
     text-align: center;
-    padding: 24px;
-    border-bottom: 4px solid #000;
-    margin-top: 160px;
+    padding: 1.5vh;
+    border-bottom: 0.3vh solid #6a6363;
+    padding-top: 13vh;
 }
   
 .header h5 {
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 1px;
+}
+
+.mainText{
+    color: var(--first-color);
 }
   
 .header h1 {
     font-size: 48px;
-    margin-bottom: 12px;
+    margin-bottom: 1.5px;
 }
   
 .header .accent {
     font-style: italic;
 }
 
+/* Social links */
 .socials {
     display: flex;
     justify-content: center;
-    margin-top: 12px;
+    margin-top: 1vh;
 }
 
 .socials a {
@@ -38,4 +44,52 @@
 
 .socials a:hover {
     color: var(--first-color);
+}
+
+/* Buttons */
+.buttons{
+    padding-top: 6vh;
+    padding-bottom: 1vh;
+}
+
+.button {
+    background-color: var(--first-color); 
+    padding: 16px 32px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+  
+.button:hover {
+    background-color: #ff491b76; 
+    transition: background-color 0.4s ease, opacity 0.4s ease;
+}
+
+/* Featured */
+.featured{
+    text-align: center;
+    padding-top: 1vh;
+}
+
+/* Dark mode switch */
+.dark-mode-switch {
+    position: absolute;
+    top: 1.5vh;
+    right: 1.5vh;
+    z-index: 10;
+}
+
+.dark-mode-switch label {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.dark-mode-switch input {
+    margin-right: 4px;
 }
