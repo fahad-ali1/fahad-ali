@@ -7,7 +7,7 @@ import {
 import Navbar from './components/navbar/navbar.jsx';
 import Header from './components/header/header.jsx';
 import About from './components/about/about.jsx';
-
+import Experience from './components/experience/experience.jsx';
 import Portfolio from './components/portfolio/portfolio.jsx';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Header />} /> 
           <Route path="/about" element={<About />} />
-          {/* <Route path="/experience" element={<Experience />} /> */}
+          <Route path="/experience" element={<Experience />} />
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>

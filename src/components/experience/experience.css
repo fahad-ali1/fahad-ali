@@ -1,0 +1,51 @@
+.experience {
+    text-align: center;
+    padding: 10vh 0px;
+    padding-top: 13vh;
+}
+
+.experienceCardContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.experienceSection {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.experienceSection h3 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 1vh;
+}
+  
+.experienceDetails {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.experienceDetails article {
+    flex: 1 1 250px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+@media screen and (max-width: 1024px) {
+    .experienceDetails article {
+      flex: 1 1 33%;
+      margin-right: 0;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .experienceDetails article {
+      flex: 1 1 50%;
+    }
+}
