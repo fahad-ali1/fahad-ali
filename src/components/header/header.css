@@ -2,7 +2,7 @@
 .header {
     text-align: center;
     padding: 1.5vh;
-    border-bottom: 0.3vh solid #6a6363;
+    border-bottom: 0.1vh solid #6a6363;
     padding-top: 13vh;
 }
   
@@ -49,7 +49,7 @@
 /* Buttons */
 .buttons{
     padding-top: 6vh;
-    padding-bottom: 1vh;
+    padding-bottom: 3vh;
 }
 
 .button {
@@ -60,36 +60,71 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 6px;
     cursor: pointer;
     border-radius: 16px;
+    margin-top: 1vh;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in;
 }
   
 .button:hover {
     background-color: #ff491b76; 
-    transition: background-color 0.4s ease, opacity 0.4s ease;
 }
 
 /* Featured */
 .featured{
     text-align: center;
-    padding-top: 1vh;
+    padding-top: 3vh;
 }
 
-/* Dark mode switch */
-.dark-mode-switch {
-    position: absolute;
-    top: 1.5vh;
-    right: 1.5vh;
-    z-index: 10;
-}
-
-.dark-mode-switch label {
+.featuredProjects {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin: 10vh;
+    margin-bottom: 17vh;
+}
+.project {
+    width: 30%;
+    background-color: #3a3a3a;
+    padding: 1.3rem;
+    border-radius: 1.3rem;
+    border: 1px solid transparent;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.featuredProjects:hover .project:not(:hover) {
+    transform: scale(0.8);
+}
+
+.project:hover {
+    border-color: var(--first-color);
+    transform: scale(1.35);
+    cursor: pointer;
+}
+
+.projectImage {
+    width: 100%;
+    height: 85%;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.project h3 {
+    margin-top: 0.5rem;
+    font-size: 18px;
     color: var(--text-color);
 }
 
-.dark-mode-switch input {
-    margin-right: 4px;
-}
+/* Dark mode button */
+/* .darkmodeButton {
+    padding: 16px 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 16px;
+} */
