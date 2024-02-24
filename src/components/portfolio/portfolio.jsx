@@ -1,12 +1,11 @@
 import React from 'react';
 import './portfolio.css';
-import IMG1 from '../../assets/class-scheduler-demo.png';
-import IMG2 from '../../assets/space-blaster-demo.png';
+import IMG1 from '../../assets/class-scheduler-webapp.png';
+import IMG2 from '../../assets/personal-website2-demo.png';
 import IMG3 from '../../assets/personal-website-demo.png';
 import IMG4 from '../../assets/property-assessment-app.png';
-import IMG5 from '../../assets/class-scheduler-webapp.png';
-import IMG6 from '../../assets/personal-website2-demo.png';
-
+import IMG5 from '../../assets/class-scheduler-demo.png';
+import IMG6 from '../../assets/space-blaster-demo.png';
 
 const Portfolio = () => {
   return (
@@ -16,12 +15,12 @@ const Portfolio = () => {
       <h1 className='caption'>Click on each card to visit the GitHub repository!</h1>
       <div className="portfolioContainer">
         <a href="https://github.com/fahad-ali1/course_registration_system" className='portfolioItem' target="_blank" rel="noopener noreferrer">
-            <article id='website2'>
+            <article id='courseRegisterWebApp'>
             <div className="portfolioItem-image">
                 <a className="livePageButton" href="https://course-register.onrender.com/" target="_blank" rel="noopener noreferrer"> 
                     🌟 Click Here to View Live Website
                 </a>
-                <img src={IMG5} alt="" />
+                <img src={IMG1} alt="" />
             </div>
             <h1>Class Scheduler Web Application</h1>
             <h3>Full Stack Web Application</h3>
@@ -31,7 +30,7 @@ const Portfolio = () => {
         <a href="https://github.com/fahad-ali1/fahad-ali" className='portfolioItem' target="_blank" rel="noopener noreferrer">
             <article id='website2'>
             <div className="portfolioItem-image">
-                <img src={IMG6} alt="" />
+                <img src={IMG2} alt="" />
             </div>
             <h1>Personal Portfolio Website (V2)</h1>
             <h3>Updated personal website with more ReactJS experience.</h3>
@@ -63,7 +62,7 @@ const Portfolio = () => {
         <a href="https://github.com/fahad-ali1/CMPT-395-Class-Scheduler" className='portfolioItem' target="_blank" rel="noopener noreferrer">
             <article id='scheduler'>
             <div className="portfolioItem-image">
-                <img src={IMG1} alt="" />
+                <img src={IMG5} alt="" />
             </div>
             <h1>Class Scheduling App</h1>
             <h3>An app created using Python and PyQT 5</h3>
@@ -73,7 +72,7 @@ const Portfolio = () => {
         <a href="https://github.com/fahad-ali1/Space-Blaster"  className='portfolioItem' target="_blank" rel="noopener noreferrer">
             <article id='game'>
             <div className="portfolioItem-image">
-                <img src={IMG2} alt="" />
+                <img src={IMG6} alt="" />
             </div>
             <h1>2D Space Shooter Game</h1>
             <h3>Game made with Python</h3>
