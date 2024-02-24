@@ -7,6 +7,7 @@ const Socials = () => {
 
   return (
     <div className="socials">
+      <h4 className='socialCaption'>Lets Connect!</h4>
       <a href="https://www.linkedin.com/in/fahad-ali-421014219/" target="_blank" rel="noopener noreferrer">
         <SiLinkedin className="socialIcon" />
       </a>

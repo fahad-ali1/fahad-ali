@@ -15,7 +15,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <h1 className='caption'>Click on each card to visit the GitHub repository!</h1>
       <div className="portfolioContainer">
-        <a href="https://github.com/fahad-ali1/fahad-ali" className='portfolioItem' target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/fahad-ali1/course_registration_system" className='portfolioItem' target="_blank" rel="noopener noreferrer">
             <article id='website2'>
             <div className="portfolioItem-image">
                 <a className="livePageButton" href="https://course-register.onrender.com/" target="_blank" rel="noopener noreferrer"> 
