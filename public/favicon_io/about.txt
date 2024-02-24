@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Noto Sans Manichaean
+- Font Author: Copyright 2022 The Noto Project Authors (https://github.com/notofonts/manichaean)
+- Font Source: http://fonts.gstatic.com/s/notosansmanichaean/v18/taiVGntiC4--qtsfi4Jp9-_GkPZZCcrfekqCNTtFCtdX.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
