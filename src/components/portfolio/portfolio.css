@@ -48,7 +48,7 @@ a {
 }
 
 .portfolioItem {
-    background-color: #3a3a3a;
+    background-color: var(--card-color);
     padding: 1.5rem;
     border-radius: 1.5rem;
     border: 1px solid transparent;

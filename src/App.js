@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,9 +11,28 @@ import Portfolio from './components/portfolio/portfolio.jsx';
 import Footer from './components/footer/footer.jsx';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <Router>
-      <div className="App">
+      <div style={{
+        '--first-color': darkMode ? '#ff491b' : '#ff491b',
+        '--text-color': darkMode ? '#000000' : '#ffffff',
+        '--body-color': darkMode ? '#e9e9e9' : '#2b2d2f',
+        '--nav-color': darkMode ? '#7e7e7e' : '#707070',
+        '--card-color': darkMode ? '#bebebe' : '#3a3a3a;',
+        ' --darkmode-button-color': darkMode ? '#ffffff' : '#000000',
+        backgroundColor: darkMode ? '#e9e9e9' : '#2b2d2f',
+        color: darkMode ? '#000000' : '#ffffff',
+
+      }} className="App">
+        <button className="darkmodeToggle" onClick={toggleDarkMode}>
+          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+        </button>
         <Navbar />
         <Routes>
           <Route path="/fahad-ali" element={<Header />} /> 

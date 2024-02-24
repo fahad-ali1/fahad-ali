@@ -3,23 +3,12 @@ import './header.css'
 import Socials from './socials.jsx'
 import FeaturedProjects from './featuredProjects.jsx';
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 
 const Header = () => {
-  // TODO: Darkmode
-  // const [isDarkMode, setIsDarkMode] = useState(true);
-  
-  // const toggleDarkMode = () => {
-  //   setIsDarkMode(prevMode => !prevMode); 
-  // };
 
   return (
     <header>
       <div className='header'>
-        {/* <button className="darkmodeButton" onClick={toggleDarkMode}>
-          {isDarkMode ? '🌙' : '☀️'} Dark Mode
-        </button> */}
-
         <h5 className='mainText'>Hello</h5>
         <h1>My name is Fahad Ali</h1>
         <Socials/>
