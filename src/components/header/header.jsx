@@ -22,7 +22,6 @@ const Header = () => {
 
         <h5 className='mainText'>Hello</h5>
         <h1>My name is Fahad Ali</h1>
-        <h5 className="accent">Fourth Year Computer Science Student</h5>
         <Socials/>
 
         <div className="aboutme">
