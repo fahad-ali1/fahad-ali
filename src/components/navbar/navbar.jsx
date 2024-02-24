@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+      <Link to="/fahad-ali" className={location.pathname === '/fahad-ali' ? 'active' : ''}>
         Home <AiFillHome />
       </Link>
       <Link to="/experience" className={location.pathname === '/experience' ? 'active' : ''}>
