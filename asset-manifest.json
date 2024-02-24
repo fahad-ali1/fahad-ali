@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fahad-ali/static/css/main.14a97f87.css",
-    "main.js": "/fahad-ali/static/js/main.fa8fc7d1.js",
+    "main.js": "/fahad-ali/static/js/main.0437afbf.js",
     "static/media/property-assessment-app.png": "/fahad-ali/static/media/property-assessment-app.2347ba72414f134bc5cd.png",
     "static/media/personal-website-demo.png": "/fahad-ali/static/media/personal-website-demo.5cfa95e664bbe7ff18d5.png",
     "static/media/personal-website2-demo.png": "/fahad-ali/static/media/personal-website2-demo.8dbaf3126ff39481aecc.png",
@@ -10,10 +10,10 @@
     "static/media/space-blaster-demo.png": "/fahad-ali/static/media/space-blaster-demo.a9dcc4b9d030a719fee6.png",
     "index.html": "/fahad-ali/index.html",
     "main.14a97f87.css.map": "/fahad-ali/static/css/main.14a97f87.css.map",
-    "main.fa8fc7d1.js.map": "/fahad-ali/static/js/main.fa8fc7d1.js.map"
+    "main.0437afbf.js.map": "/fahad-ali/static/js/main.0437afbf.js.map"
   },
   "entrypoints": [
     "static/css/main.14a97f87.css",
-    "static/js/main.fa8fc7d1.js"
+    "static/js/main.0437afbf.js"
   ]
 }
