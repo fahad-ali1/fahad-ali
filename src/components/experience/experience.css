@@ -4,48 +4,69 @@
     padding-top: 13vh;
 }
 
+.skillCategory{
+    margin-left: 1vh;
+}
+
+.skillCard {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skillCard:hover {
+    opacity: 0.7;
+}
+
 .experienceCardContent {
     max-width: 800px;
     margin: 0 auto;
 }
-  
+
 .experienceSection {
+    background-color: #3a3a3a;
+    color: white;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
     transition: transform 0.3s ease-in-out;
 }
-  
+
 .experienceSection h3 {
     display: flex;
     align-items: center;
     font-size: 20px;
     margin-bottom: 1vh;
+    color: var(--first-color); 
 }
-  
+
 .experienceDetails {
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
 }
-  
+
 .experienceDetails article {
     flex: 1 1 250px;
     margin-right: 20px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #343434; 
 }
-  
+
 @media screen and (max-width: 1024px) {
     .experienceDetails article {
-      flex: 1 1 33%;
-      margin-right: 0;
+        flex: 1 1 33%;
+        margin-right: 1vh;
     }
 }
-  
+
 @media screen and (max-width: 600px) {
     .experienceDetails article {
-      flex: 1 1 50%;
+        flex: 1 1 50%;
     }
 }

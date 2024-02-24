@@ -67,7 +67,7 @@ const Portfolio = () => {
             </div>
             <h1>Class Scheduling App</h1>
             <h3>An app created using Python and PyQT 5</h3>
-            <h4 className='skills'>Skills: Python, PyQT5, Git</h4>
+            <h4 className='skills'>Skills: Python, PyQt5, Git</h4>
             </article>
         </a>
         <a href="https://github.com/fahad-ali1/Space-Blaster"  className='portfolioItem' target="_blank" rel="noopener noreferrer">
