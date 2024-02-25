@@ -39,7 +39,7 @@ nav a.active {
 
 @media screen and (max-width: 1024px) {
     nav {
-        padding: 1vh 2vh; 
+        padding: 2vh 3vh; 
         bottom: 4vh; 
     }
 
@@ -50,11 +50,11 @@ nav a.active {
 
 @media screen and (max-width: 600px) {
     nav {
-        padding: 0.5vh 1vh; 
+        padding: 1.5vh 1vh; 
         bottom: 4vh; 
     }
 
     nav a {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
