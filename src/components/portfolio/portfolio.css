@@ -48,6 +48,7 @@ a {
 }
 
 .portfolioItem {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
     background-color: var(--card-color);
     padding: 1.5rem;
     border-radius: 1.5rem;
@@ -94,6 +95,14 @@ a {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
         gap: 0.8rem; 
     }
+    .portfolioItem {
+        width: 85%; 
+        padding: 1rem; 
+        margin: 0 auto;
+    }
+    .portfolioItem:not(:hover) img {
+        filter: brightness(100%);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -104,6 +113,11 @@ a {
 
     .portfolioItem {
         padding: 1rem;
+    }
+
+    .portfolioItem:hover {
+        border-color: transparent; 
+        transform: none; 
     }
 
     h5, h2, .skills, .caption {
