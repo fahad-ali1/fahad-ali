@@ -27,7 +27,7 @@
   --body-color: #e9e9e9;
   --nav-color: #7e7e7e;
   --card-color:#bebebe;
-  --darkmode-button-color: #000000;
+  --card-color: #bebebe;
 }
 
 body {
@@ -42,18 +42,14 @@ body {
 }
 
 .darkmodeToggle {    
-  background-color: var(--darkmode-button-color);
+  background-color: var(--card-color);
+  color: var(--text-color);
   padding: 16px 32px;
+  margin: 1vh;
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
   border-radius: 16px;
   position: absolute;
-  top: 13vh;
-  right: 20vh;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  z-index: 999;
 }

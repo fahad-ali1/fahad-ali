@@ -19,19 +19,20 @@ function App() {
 
   return (
     <Router>
-      <div style={{
+      <div 
+      style={{
         '--first-color': darkMode ? '#ff491b' : '#ff491b',
         '--text-color': darkMode ? '#000000' : '#ffffff',
         '--body-color': darkMode ? '#e9e9e9' : '#2b2d2f',
         '--nav-color': darkMode ? '#7e7e7e' : '#707070',
-        '--card-color': darkMode ? '#bebebe' : '#3a3a3a;',
-        ' --darkmode-button-color': darkMode ? '#ffffff' : '#000000',
+        '--card-color': darkMode ? '#bebebe' : '#3a3a3a',
         backgroundColor: darkMode ? '#e9e9e9' : '#2b2d2f',
         color: darkMode ? '#000000' : '#ffffff',
+      }} 
 
-      }} className="App">
+      className="App">
         <button className="darkmodeToggle" onClick={toggleDarkMode}>
-          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          {darkMode ? "☀️" : "🌙"}
         </button>
         <Navbar />
         <Routes>
