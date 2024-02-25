@@ -9,6 +9,7 @@ import Header from './components/header/header.jsx';
 import Experience from './components/experience/experience.jsx';
 import Portfolio from './components/portfolio/portfolio.jsx';
 import Footer from './components/footer/footer.jsx';
+import './App.css'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,18 +20,7 @@ function App() {
 
   return (
     <Router>
-      <div 
-      style={{
-        '--first-color': darkMode ? '#ff491b' : '#ff491b',
-        '--text-color': darkMode ? '#000000' : '#ffffff',
-        '--body-color': darkMode ? '#e9e9e9' : '#2b2d2f',
-        '--nav-color': darkMode ? '#7e7e7e' : '#707070',
-        '--card-color': darkMode ? '#bebebe' : '#3a3a3a',
-        backgroundColor: darkMode ? '#e9e9e9' : '#2b2d2f',
-        color: darkMode ? '#000000' : '#ffffff',
-      }} 
-
-      className="App">
+      <div className={darkMode ? "App dark-mode" : "App"}>
         <button className="darkmodeToggle" onClick={toggleDarkMode}>
           {darkMode ? "☀️" : "🌙"}
         </button>
@@ -45,5 +35,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
