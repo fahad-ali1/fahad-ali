@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,11 +9,21 @@ import Header from './components/header/header.jsx';
 import Experience from './components/experience/experience.jsx';
 import Portfolio from './components/portfolio/portfolio.jsx';
 import Footer from './components/footer/footer.jsx';
+import './App.css'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <Router>
-      <div className="App">
+      <div className={darkMode ? "App dark-mode" : "App"}>
+        <button className="darkmodeToggle" onClick={toggleDarkMode}>
+          {darkMode ? "☀️" : "🌙"}
+        </button>
         <Navbar />
         <Routes>
           <Route path="/fahad-ali" element={<Header />} /> 
@@ -25,5 +35,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
