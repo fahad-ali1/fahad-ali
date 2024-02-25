@@ -94,6 +94,9 @@ a {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
         gap: 0.8rem; 
     }
+    .portfolioItem:not(:hover) img {
+        filter: brightness(100%);
+    }
 }
 
 @media screen and (max-width: 600px) {
