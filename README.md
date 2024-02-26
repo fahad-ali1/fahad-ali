@@ -25,6 +25,6 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 - CSS3
 
 ### Feedback
-I welcome any feedback or suggestions you may have regarding my portfolio website. Feel free to reach out to me through the contact form provided on the website.
+I welcome any feedback or suggestions you may have regarding my portfolio website.
 
 Thank you for visiting! 🚀
