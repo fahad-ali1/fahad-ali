@@ -80,10 +80,6 @@ a {
     object-fit: contain;
 }
 
-.portfolioItem:not(:hover) img {
-    filter: brightness(60%);
-}
-
 .portfolioItem h3 {
     margin-top: 0.5rem;
     font-size: 14px;
@@ -99,9 +95,6 @@ a {
         width: 85%; 
         padding: 1rem; 
         margin: 0 auto;
-    }
-    .portfolioItem:not(:hover) img {
-        filter: brightness(100%);
     }
 }
 
