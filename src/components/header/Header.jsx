@@ -21,8 +21,8 @@ const Header = () => {
 
         <div className="buttons">
           <h4>Quick Links</h4>
-          <Link to="/experience" className="button">Experience</Link>
-          <Link to="/portfolio" className="button">Projects</Link>
+          <Link to="/fahad-ali/experience" className="button">Experience</Link>
+          <Link to="/fahad-ali/portfolio" className="button">Projects</Link>
         </div>
 
       </div>
