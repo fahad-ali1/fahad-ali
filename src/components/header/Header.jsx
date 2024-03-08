@@ -28,7 +28,7 @@ const Header = () => {
       </div>
 
       <div className='featured'>
-          <h1>Featured Projects</h1>
+          <h1>🔥 Featured Projects</h1>
           <FeaturedProjects />
       </div>
 
