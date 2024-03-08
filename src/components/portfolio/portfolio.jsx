@@ -27,10 +27,10 @@ const Portfolio = () => {
       <div className="portfolioContainer">
         <a href="https://github.com/fahad-ali1/course_registration_system" className='portfolioItem' target="_blank" rel="noopener noreferrer">
           <article id='courseRegisterWebApp'>
+            <a className="livePageButton" href="https://course-register.onrender.com/" target="_blank" rel="noopener noreferrer"> 
+              🔥 Click Here to View Live Website
+            </a>
             <div className="portfolioItem-image">
-              <a className="livePageButton" href="https://course-register.onrender.com/" target="_blank" rel="noopener noreferrer"> 
-                🌟 Click Here to View Live Website
-              </a>
               <img src={IMG1} alt="" />
             </div>
             <h1>Class Scheduler Web Application</h1>
@@ -58,6 +58,16 @@ const Portfolio = () => {
             <h4 className='skills'>Skills: ReactJS, Git</h4>
           </article>
         </a>
+        <a href="https://github.com/fahad-ali1/Space-Blaster"  className='portfolioItem' target="_blank" rel="noopener noreferrer">
+          <article id='game'>
+            <div className="portfolioItem-image">
+              <img src={IMG6} alt="" />
+            </div>
+            <h1>2D Space Shooter Game</h1>
+            <h3>Game made with Python</h3>
+            <h4 className='skills'>Skills: Python, Python Arcade, Git</h4>
+          </article>
+        </a>
         <a href="https://github.com/fahad-ali1/PropertyAssessmentGUI" className='portfolioItem' target="_blank" rel="noopener noreferrer">
           <article id='propertyAssessments'>
             <div className="portfolioItem-image">
@@ -76,16 +86,6 @@ const Portfolio = () => {
             <h1>Class Scheduling App</h1>
             <h3>An app created using Python and PyQT 5</h3>
             <h4 className='skills'>Skills: Python, PyQt5, Git</h4>
-          </article>
-        </a>
-        <a href="https://github.com/fahad-ali1/Space-Blaster"  className='portfolioItem' target="_blank" rel="noopener noreferrer">
-          <article id='game'>
-            <div className="portfolioItem-image">
-              <img src={IMG6} alt="" />
-            </div>
-            <h1>2D Space Shooter Game</h1>
-            <h3>Game made with Python</h3>
-            <h4 className='skills'>Skills: Python, Python Arcade, Git</h4>
           </article>
         </a>
       </div>
