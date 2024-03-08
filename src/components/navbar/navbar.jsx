@@ -13,10 +13,10 @@ const Nav = () => {
       <Link to="/fahad-ali" className={location.pathname === '/fahad-ali' ? 'active' : ''}>
         Home <AiFillHome />
       </Link>
-      <Link to="/experience" className={location.pathname === '/experience' ? 'active' : ''}>
+      <Link to="/fahad-ali/experience" className={location.pathname === '/fahad-ali/experience' ? 'active' : ''}>
         Experience <GiSkills />
       </Link>
-      <Link to="/portfolio" className={location.pathname === '/portfolio' ? 'active' : ''}>
+      <Link to="/fahad-ali/portfolio" className={location.pathname === '/fahad-ali/portfolio' ? 'active' : ''}>
         Projects <FaProjectDiagram />
       </Link>
     </nav>

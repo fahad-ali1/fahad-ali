@@ -27,8 +27,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/fahad-ali" element={<Header />} /> 
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/fahad-ali/experience" element={<Experience />} />
+          <Route path="/fahad-ali/portfolio" element={<Portfolio />} />
         </Routes>
         <Footer />
       </div>
