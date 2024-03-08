@@ -12,10 +12,6 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.skillCard:hover {
-    opacity: 0.7;
-}
-
 .experienceCardContent {
     max-width: 800px;
     margin: 0 auto;
