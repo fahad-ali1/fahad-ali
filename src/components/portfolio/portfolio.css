@@ -1,128 +1,131 @@
 .portfolio {
-    text-align: center;
-    padding: 10vh 0px;
-    padding-top: 13vh;
+  text-align: center;
+  padding: 10vh 0px;
+  padding-top: 13vh;
 }
-  
+
 h5 {
-    font-size: 24px;
-    color: var(--first-color);
+  font-size: 24px;
+  color: var(--first-color);
 }
-  
+
 h2 {
-    font-size: 40px;
-    color: var(--text-color);
+  font-size: 40px;
+  color: var(--text-color);
 }
 
 .skills {
-    margin-top: 1vh;
-    font-size: 20px;
+  margin-top: 1vh;
+  font-size: 20px;
 }
 
 .caption {
-    font-size: 18px;
-    margin-top: 1vh;
-    margin-bottom: 3vh;
-    color: var(--text-color);
+  font-size: 18px;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  color: var(--text-color);
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-.livePageButton{
-    padding: 1vh;
-    background-color: var(--nav-color);
-    font-weight: bold;
-    border-radius: 0.3rem;
+.livePageButton {
+  padding: 1vh;
+  background-color: var(--nav-color);
+  font-weight: bold;
+  border-radius: 0.3rem;
 }
 
 .livePageButton:hover {
-    background-color: var(--first-color);
-    transition: background-color 0.3s ease;
+  background-color: var(--first-color);
+  transition: background-color 0.3s ease;
 }
 
 .portfolioContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 1rem;
-    margin: 0 auto;
-    max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .portfolioItem {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-    background-color: var(--card-color);
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    border: 1px solid transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease-in-out; 
-    overflow: hidden;
-    position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  background-color: var(--card-color);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
 }
 
 .portfolioItem:hover {
-    border-color: var(--first-color);
-    transform: scale(1.04);
+  border-color: var(--first-color);
+  transform: scale(1.04);
 }
 
 .portfolioItem-image {
-    width: 100%; 
-    height: 300px; 
-    border-radius: 0.3rem;
-    overflow: hidden;
-    margin-bottom: 1rem;
+  width: 100%;
+  height: 300px;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .portfolioItem img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 1rem;
 }
 
 .portfolioItem h3 {
-    margin-top: 0.5rem;
-    font-size: 14px;
-    color: var(--first-color);
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: var(--first-color);
 }
 
 @media screen and (max-width: 1024px) {
-    .portfolioContainer {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
-        gap: 0.8rem; 
-    }
-    .portfolioItem {
-        width: 85%; 
-        padding: 1rem; 
-        margin: 0 auto;
-    }
+  .portfolioContainer {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 0.8rem;
+  }
+  .portfolioItem {
+    width: 85%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .portfolioContainer {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 2fr)); 
-        gap: 0.5rem; 
-    }
+  .portfolioContainer {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+    gap: 0.5rem;
+  }
 
-    .portfolioItem {
-        padding: 1rem;
-    }
+  .portfolioItem {
+    padding: 1rem;
+  }
 
-    .portfolioItem:hover {
-        border-color: transparent; 
-        transform: none; 
-    }
+  .portfolioItem:hover {
+    border-color: transparent;
+    transform: none;
+  }
 
-    h5, h2, .skills, .caption {
-        font-size: 16px; 
-    }
+  h5,
+  h2,
+  .skills,
+  .caption {
+    font-size: 16px;
+  }
 
-    h1 {
-        font-size: smaller;
-    }
+  h1 {
+    font-size: smaller;
+  }
 }

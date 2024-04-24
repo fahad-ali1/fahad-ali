@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
-import Navbar from './components/navbar/navbar.jsx';
-import Header from './components/header/header.jsx';
-import Experience from './components/experience/experience.jsx';
-import Portfolio from './components/portfolio/portfolio.jsx';
-import Footer from './components/footer/footer.jsx';
-import './App.css'
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/navbar.jsx";
+import Header from "./components/header/Header.jsx";
+import Experience from "./components/experience/experience.jsx";
+import Portfolio from "./components/portfolio/portfolio.jsx";
+import Footer from "./components/footer/footer.jsx";
+import "./App.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -26,7 +22,7 @@ function App() {
         </button>
         <Navbar />
         <Routes>
-          <Route path="/fahad-ali" element={<Header />} /> 
+          <Route path="/fahad-ali" element={<Header />} />
           <Route path="/fahad-ali/experience" element={<Experience />} />
           <Route path="/fahad-ali/portfolio" element={<Portfolio />} />
         </Routes>
@@ -35,6 +31,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;
