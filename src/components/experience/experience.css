@@ -1,74 +1,74 @@
 .experience {
-    text-align: center;
-    padding: 10vh 0px;
-    padding-top: 13vh;
+  text-align: center;
+  padding: 10vh 0px;
+  padding-top: 13vh;
 }
 
-.skillCategory{
-    margin-left: 1vh;
+.skillCategory {
+  margin-left: 1vh;
 }
 
 .skillCard {
-    transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .experienceCardContent {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .experienceSection {
-    background-color: var(--card-color);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
+  background-color: var(--card-color);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .experienceSection h3 {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    margin-bottom: 1vh;
-    color: var(--first-color); 
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 1vh;
+  color: var(--first-color);
 }
 
 .experienceDetails {
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .experienceDetails article {
-    flex: 1 1 250px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: rgb(217, 217, 217);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #343434; 
+  flex: 1 1 250px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgb(217, 217, 217);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #343434;
 }
 
 @media screen and (max-width: 1024px) {
-    .experienceDetails article {
-        flex: 1 1 33%;
-        margin-right: 1vh;
-    }
+  .experienceDetails article {
+    flex: 1 1 33%;
+    margin-right: 1vh;
+  }
 
-    .experienceSection{
-        width: 85%; 
-        margin: 2vh auto;
-    }
+  .experienceSection {
+    width: 85%;
+    margin: 2vh auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .experienceDetails article {
-        flex: 1 1 50%;
-    }
+  .experienceDetails article {
+    flex: 1 1 50%;
+  }
 }
