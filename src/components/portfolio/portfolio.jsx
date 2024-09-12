@@ -8,6 +8,7 @@ import PersonalWebsite1Image from "../../assets/personal-website-demo.png";
 import PropertyAssessmentImage from "../../assets/property-assessment-app.png";
 import SpaceBlasterImage from "../../assets/space-blaster-demo.png";
 import CoupOnlineGameImage from "../../assets/coup-online-game.png";
+import HomeServer from "../../assets/raspberrypi5-stock-image.jpg";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ const Portfolio = () => {
             <h4 className="skills">Skills: ReactJS, Node.js, MongoDB, Git</h4>
           </article>
         </a>
+
         <a
           href="https://github.com/batec2/CoupOnline"
           className="portfolioItem"
@@ -59,14 +61,6 @@ const Portfolio = () => {
           rel="noopener noreferrer"
         >
           <article id="coupOnlineGame">
-            <a
-              className="livePageButton"
-              href="https://batec2.github.io/CoupOnline/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              🔥 Click Here to View Live Game
-            </a>
             <div className="portfolioItem-image">
               <img src={CoupOnlineGameImage} alt="" />
             </div>
@@ -77,6 +71,18 @@ const Portfolio = () => {
             </h4>
           </article>
         </a>
+
+        <a className="portfolioItem">
+          <article id="personalServerProject">
+            <div className="portfolioItem-image">
+              <img src={HomeServer} alt="Personal Server Project" />
+            </div>
+            <h1>Personal Server Project</h1>
+            <h3>Self-hosted Services</h3>
+            <h4 className="skills">Skills: Linux, Networking, Docker, SSH, Scripting</h4>
+          </article>
+        </a>
+
         <a
           href="https://github.com/fahad-ali1/fahad-ali"
           className="portfolioItem"
@@ -88,7 +94,7 @@ const Portfolio = () => {
               <img src={PersonalWebsite2Image} alt="" />
             </div>
             <h1>Personal Portfolio Website (V2)</h1>
-            <h3>Updated personal website with more ReactJS experience.</h3>
+            <h3>Updated Portfolio Website</h3>
             <h4 className="skills">Skills: ReactJS, Git</h4>
           </article>
         </a>
@@ -103,7 +109,7 @@ const Portfolio = () => {
               <img src={PersonalWebsite1Image} alt="" />
             </div>
             <h1>Personal Portfolio Website (V1)</h1>
-            <h3>Created personal website (V1) to learn ReactJS</h3>
+            <h3>Original Portfolio Website to learn ReactJS</h3>
             <h4 className="skills">Skills: ReactJS, Git</h4>
           </article>
         </a>
@@ -133,7 +139,7 @@ const Portfolio = () => {
               <img src={PropertyAssessmentImage} alt="" />
             </div>
             <h1>Property Assessments Application</h1>
-            <h3>An app to create assessments of properties in Edmonton</h3>
+            <h3>An app to Create Assessments of Properties in Edmonton</h3>
             <h4 className="skills">Skills: Java, SQL, Git</h4>
           </article>
         </a>
@@ -148,7 +154,7 @@ const Portfolio = () => {
               <img src={ClassSchedulerApp} alt="" />
             </div>
             <h1>Class Scheduling App</h1>
-            <h3>An app created using Python and PyQT 5</h3>
+            <h3>An app Created Using Python and PyQT 5</h3>
             <h4 className="skills">Skills: Python, PyQt5, Git</h4>
           </article>
         </a>
