@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar.jsx";
 import Header from "./components/header/Header.jsx";
 import Experience from "./components/experience/experience.jsx";
 import Portfolio from "./components/portfolio/portfolio.jsx";
 import Footer from "./components/footer/footer.jsx";
+import { useDarkMode } from "./hooks/useDarkMode"; 
 import "./App.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  // Custom hook to toggle dark mode
+  const [darkMode, toggleDarkMode] = useDarkMode();  
 
   return (
     <Router>
