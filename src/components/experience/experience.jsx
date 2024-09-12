@@ -8,6 +8,9 @@ import {
   FaReact,
   FaGithub,
   FaCode,
+  FaWindows,
+  FaApple,
+  FaLinux,
 } from "react-icons/fa";
 
 const Experience = () => {
@@ -30,11 +33,21 @@ const Experience = () => {
         { name: "SQL", level: "Intermediate", icon: <FaDatabase /> },
         { name: "MongoDB", level: "Intermediate", icon: <FaDatabase /> },
         { name: "ReactJS", level: "Intermediate", icon: <FaReact /> },
-        { name: "Vite", level: "Intermediate", icon: <FaCode   /> },
+        { name: "Vite", level: "Intermediate", icon: <FaCode /> },
         { name: "Git/GitHub", level: "Advanced", icon: <FaGithub /> },
-        { name: "Tailwind CSS  ", level: "Intermediate", icon: <FaCode /> },
+        { name: "Tailwind CSS", level: "Intermediate", icon: <FaCode /> },
         { name: "Visual Studio", level: "Intermediate", icon: <FaCode /> },
         { name: "PyQt5", level: "Intermediate", icon: <FaCode /> },
+      ],
+    },
+    {
+      category: "Operating Systems",
+      icon: <FaWindows />,
+      details: [
+        { name: "Windows 10", level: "Advanced", icon: <FaWindows /> },
+        { name: "Windows 11", level: "Advanced", icon: <FaWindows /> },
+        { name: "macOS", level: "Advanced", icon: <FaApple /> },
+        { name: "Linux", level: "Experienced", icon: <FaLinux /> },
       ],
     },
   ];
