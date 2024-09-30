@@ -9,7 +9,7 @@ const Socials = () => {
     <div className="socials">
       <h4 className="socialCaption">Lets Connect!</h4>
       <a
-        href="https://www.linkedin.com/in/fahad-ali-421014219/"
+        href="https://www.linkedin.com/in/fahad-ali1/"
         target="_blank"
         rel="noopener noreferrer"
       >
