@@ -9,15 +9,14 @@ const Header = () => {
     <header>
       <div className="header">
         <h5 className="mainText">Hello</h5>
-        <h1>My name is Fahad Ali</h1>
+        <h1>My Name is Fahad Ali</h1>
         <Socials />
 
         <div className="aboutme">
-          <h4>🚀 Welcome to my website!</h4>
+          <h4>🚀 Welcome to my Website!</h4>
           <h4>
-            💻 Coding Projects | 🏠 Home Servers | 🌐 Full-Stack Applications
+            💻 Coding Projects | 🌐 Full-Stack Applications | 🤖 RAG Applications | 🏠 Home Servers 
           </h4>
-          <h4>🚗 I also love working with vehicles</h4>
         </div>
 
         <div className="buttons">
