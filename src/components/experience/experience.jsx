@@ -11,6 +11,7 @@ import {
   FaWindows,
   FaApple,
   FaLinux,
+  FaBrain,
 } from "react-icons/fa";
 
 const Experience = () => {
@@ -23,6 +24,27 @@ const Experience = () => {
         { name: "Java", level: "Experienced", icon: <FaCode /> },
         { name: "JavaScript", level: "Intermediate", icon: <FaCode /> },
         { name: "C", level: "Intermediate", icon: <FaCode /> },
+      ],
+    },
+    {
+      category: "AI/ML Tools",
+      icon: <FaBrain />,
+      details: [
+        {
+          name: "Cohere",
+          level: "Intermediate",
+          icon: <FaCode />,
+        },
+        {
+          name: "Langchain",
+          level: "Intermediate",
+          icon: <FaCode />,
+        },
+        {
+          name: "Pinecone",
+          level: "Intermediate",
+          icon: <FaCode />,
+        },
       ],
     },
     {
