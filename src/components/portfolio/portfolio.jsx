@@ -9,6 +9,7 @@ import PropertyAssessmentImage from "../../assets/property-assessment-app.png";
 import SpaceBlasterImage from "../../assets/space-blaster-demo.png";
 import CoupOnlineGameImage from "../../assets/coup-online-game.png";
 import HomeServer from "../../assets/raspberrypi5-stock-image.jpg";
+import ChatBotImage from "../../assets/chatbot.png";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -30,6 +31,48 @@ const Portfolio = () => {
         Click on each card to visit the GitHub repository!
       </h1>
       <div className="portfolioContainer">
+        <a
+          href="https://github.com/fahad-ali1/MacEwan_Chatbot"
+          className="portfolioItem"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <article id="ChatBot">
+            <a
+              className="livePageButton"
+              href="https://macewan-chatbot.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🔥 Click Here to View Live Website
+            </a>
+            <div className="portfolioItem-image">
+              <img src={ChatBotImage} alt="" />
+            </div>
+            <h1>MacEwan University Chatbot</h1>
+            <h3>Full Stack Web Application</h3>
+            <h4 className="skills">
+              Skills: ReactJS, Pinecone, Cohere, Langchain
+            </h4>
+          </article>
+        </a>
+        <a
+          href="https://github.com/batec2/CoupOnline"
+          className="portfolioItem"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <article id="coupOnlineGame">
+            <div className="portfolioItem-image">
+              <img src={CoupOnlineGameImage} alt="" />
+            </div>
+            <h1>Coup Card Game (Online Remake)</h1>
+            <h3>Full Stack Web Game</h3>
+            <h4 className="skills">
+              Skills: Vite, Node.js, MongoDB, ShadCN, Tailwind CSS, Git
+            </h4>
+          </article>
+        </a>
         <a
           href="https://github.com/fahad-ali1/course_registration_system"
           className="portfolioItem"
@@ -53,25 +96,6 @@ const Portfolio = () => {
             <h4 className="skills">Skills: ReactJS, Node.js, MongoDB, Git</h4>
           </article>
         </a>
-
-        <a
-          href="https://github.com/batec2/CoupOnline"
-          className="portfolioItem"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <article id="coupOnlineGame">
-            <div className="portfolioItem-image">
-              <img src={CoupOnlineGameImage} alt="" />
-            </div>
-            <h1>Coup Card Game (Online Remake)</h1>
-            <h3>Full Stack Web Game</h3>
-            <h4 className="skills">
-              Skills: Vite, Node.js, MongoDB, ShadCN, Tailwind CSS, Git
-            </h4>
-          </article>
-        </a>
-
         <a className="portfolioItem">
           <article id="personalServerProject">
             <div className="portfolioItem-image">
@@ -79,7 +103,9 @@ const Portfolio = () => {
             </div>
             <h1>Personal Server Project</h1>
             <h3>Self-hosted Services</h3>
-            <h4 className="skills">Skills: Linux, Networking, Docker, SSH, Scripting</h4>
+            <h4 className="skills">
+              Skills: Linux, Networking, Docker, SSH, Scripting
+            </h4>
           </article>
         </a>
 

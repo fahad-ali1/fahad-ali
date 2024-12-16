@@ -23,7 +23,7 @@ h2 {
   font-size: 18px;
   margin-top: 1vh;
   margin-bottom: 3vh;
-  color: var(--text-color);
+  color: var(--first-color);
 }
 
 a {
