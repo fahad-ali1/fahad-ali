@@ -20,9 +20,9 @@ function App() {
         </button>
         <Navbar />
         <Routes>
-          <Route path="/fahad-ali" element={<Header />} />
-          <Route path="/fahad-ali/experience" element={<Experience />} />
-          <Route path="/fahad-ali/portfolio" element={<Portfolio />} />
+          <Route path="/" element={<Header />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
         <Footer />
       </div>
