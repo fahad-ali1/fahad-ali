@@ -21,10 +21,10 @@ const Header = () => {
 
         <div className="buttons">
           <h4>Quick Links</h4>
-          <Link to="/fahad-ali/experience" className="button">
+          <Link to="/experience" className="button">
             Experience
           </Link>
-          <Link to="/fahad-ali/portfolio" className="button">
+          <Link to="/portfolio" className="button">
             Projects
           </Link>
         </div>

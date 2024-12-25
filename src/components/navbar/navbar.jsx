@@ -11,22 +11,22 @@ const Nav = () => {
   return (
     <nav>
       <Link
-        to="/fahad-ali"
-        className={location.pathname === "/fahad-ali" ? "active" : ""}
+        to="/"
+        className={location.pathname === "/" ? "active" : ""}
       >
         Home <AiFillHome />
       </Link>
       <Link
-        to="/fahad-ali/experience"
+        to="/experience"
         className={
-          location.pathname === "/fahad-ali/experience" ? "active" : ""
+          location.pathname === "/experience" ? "active" : ""
         }
       >
         Experience <GiSkills />
       </Link>
       <Link
-        to="/fahad-ali/portfolio"
-        className={location.pathname === "/fahad-ali/portfolio" ? "active" : ""}
+        to="/portfolio"
+        className={location.pathname === "/portfolio" ? "active" : ""}
       >
         Projects <FaProjectDiagram />
       </Link>

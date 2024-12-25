@@ -10,7 +10,7 @@ const FeaturedProjects = () => {
       <div className="project">
         <Link
           to={{
-            pathname: "/fahad-ali/portfolio",
+            pathname: "/portfolio",
             hash: "#ChatBot",
           }}
         >
@@ -21,7 +21,7 @@ const FeaturedProjects = () => {
       <div className="project">
         <Link
           to={{
-            pathname: "/fahad-ali/portfolio",
+            pathname: "/portfolio",
             hash: "#courseRegisterWebApp",
           }}
         >
@@ -35,7 +35,7 @@ const FeaturedProjects = () => {
       </div>
       <div className="project">
         <Link
-          to={{ pathname: "/fahad-ali/portfolio", hash: "#coupOnlineGame" }}
+          to={{ pathname: "/portfolio", hash: "#coupOnlineGame" }}
         >
           <img
             className="projectImage"
