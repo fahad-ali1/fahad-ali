@@ -17,7 +17,6 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "add-domain": "echo \"www.fahadali.dev\" > build/CNAME",
     "deploy": "gh-pages -d build -m \"Deploying the latest version\"",
     "build": "react-scripts build",
     "test": "react-scripts test",

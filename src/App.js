@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar.jsx";
 import Header from "./components/header/Header.jsx";
 import Experience from "./components/experience/experience.jsx";
@@ -9,7 +9,6 @@ import { useDarkMode } from "./hooks/useDarkMode";
 import "./App.css";
 
 function App() {
-  // Custom hook to toggle dark mode
   const [darkMode, toggleDarkMode] = useDarkMode();  
 
   return (
