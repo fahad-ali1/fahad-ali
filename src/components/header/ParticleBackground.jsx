@@ -11,6 +11,10 @@ const ParticleBackground = () => {
     let mouseX = 0;
     let mouseY = 0;
 
+    // Initialize canvas size immediately
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
     // Get CSS variables
     const getParticleColor = () =>
       getComputedStyle(document.documentElement)
@@ -31,9 +35,8 @@ const ParticleBackground = () => {
 
     // Particle class with enhanced properties
     class Particle {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+      constructor(forceSpread = false) {
+        this.initializePosition(forceSpread);
         // Varying speeds for more dynamic movement
         this.vx = (Math.random() * 2 - 1) * (Math.random() * 0.5 + 0.5);
         this.vy = (Math.random() * 2 - 1) * (Math.random() * 0.5 + 0.5);
@@ -43,6 +46,35 @@ const ParticleBackground = () => {
         this.baseRadius = this.radius;
         this.pulseSpeed = Math.random() * 0.02 + 0.01;
         this.pulseOffset = Math.random() * Math.PI * 2;
+      }
+
+      initializePosition(forceSpread) {
+        if (forceSpread) {
+          // Ensure particles are spread across the entire canvas initially
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+        } else {
+          // For new particles during runtime, start at edges
+          const side = Math.floor(Math.random() * 4);
+          switch (side) {
+            case 0: // top
+              this.x = Math.random() * canvas.width;
+              this.y = -10;
+              break;
+            case 1: // right
+              this.x = canvas.width + 10;
+              this.y = Math.random() * canvas.height;
+              break;
+            case 2: // bottom
+              this.x = Math.random() * canvas.width;
+              this.y = canvas.height + 10;
+              break;
+            case 3: // left
+              this.x = -10;
+              this.y = Math.random() * canvas.height;
+              break;
+          }
+        }
       }
 
       update() {
@@ -71,13 +103,19 @@ const ParticleBackground = () => {
       }
     }
 
-    // Create particles
-    particlesRef.current = Array.from({ length: 70 }, () => new Particle());
+    // Create particles with forced spread
+    particlesRef.current = Array.from({ length: 70 }, () => new Particle(true));
 
     // Handle window resize
     const handleResize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+
+      // Redistribute particles on resize
+      particlesRef.current = Array.from(
+        { length: 70 },
+        () => new Particle(true)
+      );
     };
 
     // Enhanced mouse interaction
@@ -111,7 +149,7 @@ const ParticleBackground = () => {
             const opacity = 0.25 * (1 - distance / 150);
             ctx.beginPath();
             ctx.strokeStyle = getParticleLineColor(opacity);
-            ctx.lineWidth = 0.6; // Thinner lines for better performance
+            ctx.lineWidth = 0.6;
             ctx.moveTo(particlesRef.current[i].x, particlesRef.current[i].y);
             ctx.lineTo(particlesRef.current[j].x, particlesRef.current[j].y);
             ctx.stroke();
@@ -162,7 +200,6 @@ const ParticleBackground = () => {
     });
 
     // Initialize
-    handleResize();
     window.addEventListener("resize", handleResize);
     window.addEventListener("mousemove", handleMouseMove);
     animate();
