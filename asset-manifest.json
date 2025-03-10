@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d697e8c1.css",
-    "main.js": "/static/js/main.41e1aa89.js",
+    "main.css": "/static/css/main.55d4a9b3.css",
+    "main.js": "/static/js/main.5cff1277.js",
     "static/media/property-assessment-app.png": "/static/media/property-assessment-app.2347ba72414f134bc5cd.png",
     "static/media/personal-website-demo.png": "/static/media/personal-website-demo.5cfa95e664bbe7ff18d5.png",
     "static/media/class-scheduler-webapp.png": "/static/media/class-scheduler-webapp.2e9070fb3e174a0b2b26.png",
     "static/media/personal-website2-demo.png": "/static/media/personal-website2-demo.8dbaf3126ff39481aecc.png",
     "static/media/chatbot.png": "/static/media/chatbot.acd19e65c6f149de9385.png",
+    "static/media/automategpt-automation.png": "/static/media/automategpt-automation.99c1088be193f8e6da2d.png",
     "static/media/raspberrypi5-stock-image.jpg": "/static/media/raspberrypi5-stock-image.2221024dfd8ca3c12ffc.jpg",
     "static/media/class-scheduler-demo.png": "/static/media/class-scheduler-demo.27e194d8b12a2ab6650a.png",
     "static/media/coup-online-game.png": "/static/media/coup-online-game.e1fffbcaf566eb4f767a.png",
     "static/media/space-blaster-demo.png": "/static/media/space-blaster-demo.a9dcc4b9d030a719fee6.png",
     "index.html": "/index.html",
-    "main.d697e8c1.css.map": "/static/css/main.d697e8c1.css.map",
-    "main.41e1aa89.js.map": "/static/js/main.41e1aa89.js.map"
+    "main.55d4a9b3.css.map": "/static/css/main.55d4a9b3.css.map",
+    "main.5cff1277.js.map": "/static/js/main.5cff1277.js.map"
   },
   "entrypoints": [
-    "static/css/main.d697e8c1.css",
-    "static/js/main.41e1aa89.js"
+    "static/css/main.55d4a9b3.css",
+    "static/js/main.5cff1277.js"
   ]
 }
