@@ -76,7 +76,7 @@
 }
 
 .skillCard {
-  background: var(--glass-bg);
+  background: var(--card-color);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
@@ -86,12 +86,26 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  opacity: 0.95;
 }
 
 .skillCard:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
   border-color: var(--first-color);
+  opacity: 1;
+}
+
+/* Add specific light mode overrides */
+:root:not(.dark-mode) .skillCard {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+:root:not(.dark-mode) .skillCard:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--first-color);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
 }
 
 .skillCard .icon {
