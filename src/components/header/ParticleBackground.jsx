@@ -137,6 +137,10 @@ const ParticleBackground = () => {
               this.x = -10;
               this.y = Math.random() * canvas.height;
               break;
+            default: // fallback to top
+              this.x = Math.random() * canvas.width;
+              this.y = -10;
+              break;
           }
         }
       }

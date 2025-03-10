@@ -1,30 +1,17 @@
 import React from "react";
 import "./experience.css";
-import { MdLanguage } from "react-icons/md";
 import {
   FaTools,
-  FaNodeJs,
   FaDatabase,
   FaReact,
   FaGithub,
-  FaCode,
-  FaWindows,
-  FaApple,
   FaLinux,
   FaBrain,
   FaCloud,
-  FaServer,
   FaRobot,
   FaVideo,
 } from "react-icons/fa";
-import {
-  SiVite,
-  SiTailwindcss,
-  SiPython,
-  SiJavascript,
-  SiMongodb,
-  SiDocker,
-} from "react-icons/si";
+import { SiTailwindcss, SiPython, SiDocker } from "react-icons/si";
 
 const Experience = () => {
   const skills = [
