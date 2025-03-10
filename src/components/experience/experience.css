@@ -76,7 +76,7 @@
 }
 
 .skillCard {
-  background: var(--card-color);
+  background: var(--body-color);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
@@ -87,6 +87,11 @@
   align-items: center;
   gap: 1rem;
   opacity: 0.95;
+}
+
+/* Target first skill card in first experience section */
+.experienceSection:first-child .experienceDetails .skillCard:first-child {
+  background-color: var(--body-color) !important;
 }
 
 .skillCard:hover {
@@ -157,7 +162,12 @@
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
+  .experienceSection:first-child .experienceDetails .skillCard:first-child {
+    background-color: var(--body-color) !important;
+  }
+
   .skillCard {
+    background-color: var(--body-color) !important;
     padding: 0.75rem;
   }
 

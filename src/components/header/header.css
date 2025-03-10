@@ -379,6 +379,25 @@
 
   .project-content {
     padding: 1rem;
+    background-color: var(--body-color) !important;
+  }
+
+  .featured-projects-scroll > .featured-project-card:first-child {
+    border: 1px solid var(--glass-border);
+  }
+
+  .featured-projects-scroll > .featured-project-card:first-child:hover {
+    border-color: var(--first-color);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .featured-project-card:first-child .project-buttons .project-button.github {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .project-button.github {
+    background: rgba(255, 255, 255, 0.1) !important;
   }
 
   .project-content h3 {

@@ -99,9 +99,14 @@
 }
 
 .githubButton {
-  background: rgba(51, 51, 51, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   color: var(--text-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Target first portfolio item's github button specifically */
+.portfolioContainer > .portfolioItem:first-child .githubButton {
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 .livePageButton {
@@ -215,8 +220,25 @@
   }
 
   .portfolioContainer {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .portfolioItem {
+    background-color: var(--body-color) !important;
+  }
+
+  .portfolioContainer > .portfolioItem:first-child {
+    background-color: var(--body-color) !important;
+  }
+
+  .portfolioContainer > .portfolioItem:first-child .githubButton {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .githubButton {
+    background: rgba(255, 255, 255, 0.1) !important;
   }
 
   .portfolioItem-image {

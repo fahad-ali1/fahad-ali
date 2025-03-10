@@ -219,4 +219,16 @@ body {
   .navbar-container {
     gap: 1rem;
   }
+
+  .darkmodeToggle {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .darkmodeToggle {
+    padding: 9px 13px;
+    font-size: 1.1rem;
+  }
 }
