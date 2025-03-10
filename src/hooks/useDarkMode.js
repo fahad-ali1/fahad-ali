@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export const useDarkMode = () => {
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem("darkMode");
-    return savedMode ? JSON.parse(savedMode) : false;
+    return savedMode ? JSON.parse(savedMode) : true; // Default to true for dark mode
   });
 
   const toggleDarkMode = () => {
@@ -16,11 +16,7 @@ export const useDarkMode = () => {
   };
 
   useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
+    document.documentElement.classList.toggle("dark-mode", darkMode);
   }, [darkMode]);
 
   return [darkMode, toggleDarkMode];

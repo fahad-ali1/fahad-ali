@@ -12,89 +12,84 @@ import {
   FaApple,
   FaLinux,
   FaBrain,
+  FaCloud,
+  FaServer,
+  FaRobot,
+  FaVideo,
 } from "react-icons/fa";
+import {
+  SiVite,
+  SiTailwindcss,
+  SiPython,
+  SiJavascript,
+  SiMongodb,
+  SiDocker,
+} from "react-icons/si";
 
 const Experience = () => {
   const skills = [
     {
-      category: "Languages",
-      icon: <MdLanguage />,
-      details: [
-        { name: "Python", level: "Advanced", icon: <FaCode /> },
-        { name: "Java", level: "Experienced", icon: <FaCode /> },
-        { name: "JavaScript", level: "Intermediate", icon: <FaCode /> },
-        { name: "C", level: "Intermediate", icon: <FaCode /> },
-      ],
-    },
-    {
-      category: "AI/ML Tools",
+      category: "AI & Machine Learning",
       icon: <FaBrain />,
       details: [
-        {
-          name: "Cohere",
-          level: "Intermediate",
-          icon: <FaCode />,
-        },
-        {
-          name: "Langchain",
-          level: "Intermediate",
-          icon: <FaCode />,
-        },
-        {
-          name: "Pinecone",
-          level: "Intermediate",
-          icon: <FaCode />,
-        },
+        { name: "RAG Systems", icon: <FaRobot /> },
+        { name: "LangChain", icon: <FaRobot /> },
+        { name: "Vector DBs", icon: <FaDatabase /> },
+        { name: "Speech AI", icon: <FaVideo /> },
+        { name: "LLM Integration", icon: <FaBrain /> },
       ],
     },
     {
-      category: "Tools",
+      category: "Full Stack Development",
+      icon: <FaReact />,
+      details: [
+        { name: "React/Node.js", icon: <FaReact /> },
+        { name: "Python", icon: <SiPython /> },
+        { name: "MongoDB/SQL", icon: <FaDatabase /> },
+        { name: "Modern UI", icon: <SiTailwindcss /> },
+        { name: "API Design", icon: <FaCloud /> },
+      ],
+    },
+    {
+      category: "DevOps & Infrastructure",
       icon: <FaTools />,
       details: [
-        { name: "Node.js", level: "Intermediate", icon: <FaNodeJs /> },
-        { name: "SQL", level: "Intermediate", icon: <FaDatabase /> },
-        { name: "MongoDB", level: "Intermediate", icon: <FaDatabase /> },
-        { name: "ReactJS", level: "Intermediate", icon: <FaReact /> },
-        { name: "Vite", level: "Intermediate", icon: <FaCode /> },
-        { name: "Git/GitHub", level: "Advanced", icon: <FaGithub /> },
-        { name: "Tailwind CSS", level: "Intermediate", icon: <FaCode /> },
-        { name: "Visual Studio", level: "Intermediate", icon: <FaCode /> },
-        { name: "PyQt5", level: "Intermediate", icon: <FaCode /> },
-      ],
-    },
-    {
-      category: "Operating Systems",
-      icon: <FaWindows />,
-      details: [
-        { name: "Windows 10", level: "Advanced", icon: <FaWindows /> },
-        { name: "Windows 11", level: "Advanced", icon: <FaWindows /> },
-        { name: "macOS", level: "Advanced", icon: <FaApple /> },
-        { name: "Linux", level: "Experienced", icon: <FaLinux /> },
+        { name: "Linux Systems", icon: <FaLinux /> },
+        { name: "Git/CI/CD", icon: <FaGithub /> },
+        { name: "Docker", icon: <SiDocker /> },
+        { name: "Cloud Services", icon: <FaCloud /> },
       ],
     },
   ];
 
   return (
     <div className="experience">
-      <div className="experienceCardContent">
+      <div className="experience-container">
         <h5>What Skills Do I Have?</h5>
         <h2>My Experience</h2>
 
         {skills.map((skill, index) => (
-          <div className="experienceSection" key={index}>
+          <div
+            className="experienceSection"
+            key={index}
+            style={{ animationDelay: `${0.6 + index * 0.2}s` }}
+          >
             <h3>
-              <span className="skillIcon">{skill.icon}</span>{" "}
+              <span className="skillIcon">{skill.icon}</span>
               <span className="skillCategory">{skill.category}</span>
             </h3>
             <div className="experienceDetails">
               {skill.details.map((detail, idx) => (
-                <article className="skillCard" key={idx}>
+                <div
+                  className="skillCard"
+                  key={idx}
+                  style={{ animationDelay: `${0.8 + idx * 0.1}s` }}
+                >
+                  <span className="icon">{detail.icon}</span>
                   <div>
-                    <span className="icon">{detail.icon}</span>
                     <h4>{detail.name}</h4>
-                    <small>{detail.level}</small>
                   </div>
-                </article>
+                </div>
               ))}
             </div>
           </div>

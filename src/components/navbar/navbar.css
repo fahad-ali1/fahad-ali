@@ -1,60 +1,116 @@
-nav {
-  background: var(--nav-color);
-  width: max-content;
-  display: block;
-  padding: 1vh 2vh;
-  z-index: 2;
+.navbar {
   position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-top: 1px solid var(--glass-border);
+  transition: all var(--transition-medium);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 16px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-color);
+  border-radius: 12px;
+  transition: all var(--transition-fast);
+  position: relative;
+  gap: 0.5rem;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  transition: transform var(--transition-fast);
+}
+
+.nav-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity var(--transition-fast);
+}
+
+.nav-item:hover {
+  background: var(--glass-bg);
+  transform: translateY(-4px);
+}
+
+.nav-item:hover .nav-icon {
+  transform: scale(1.1);
+}
+
+.nav-item:hover .nav-text {
+  opacity: 1;
+}
+
+.nav-item.active {
+  background: var(--navbar-active);
+  color: var(--first-color);
+}
+
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 3.3vh;
-  display: flex;
-  gap: 3vh;
-  border-radius: 2vh;
-  backdrop-filter: blur(24px);
-  transition: background-color 0.3s ease;
+  width: 20px;
+  height: 2px;
+  background: var(--first-color);
+  border-radius: 2px;
 }
 
-nav a {
-  background: transparent;
-  padding: 1vh;
-  border-radius: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--first-color);
-  font-size: 16px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-  background: var(--body-color);
-}
-
-nav a.active {
-  background: var(--navbar-active);
-  opacity: 0.7;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
-}
-
-@media screen and (max-width: 1024px) {
-  nav {
-    padding: 2vh 3vh;
-    bottom: 4vh;
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    gap: 1rem;
+    padding: 0.25rem 1rem;
   }
 
-  nav a {
-    font-size: 14px;
+  .nav-item {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-icon {
+    font-size: 1.25rem;
+  }
+
+  .nav-text {
+    font-size: 0.8rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  nav {
-    padding: 1.5vh 1vh;
-    bottom: 4vh;
+@media screen and (max-width: 480px) {
+  .navbar-container {
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
   }
 
-  nav a {
-    font-size: 14px;
+  .nav-item {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+  }
+
+  .nav-text {
+    font-size: 0.75rem;
   }
 }

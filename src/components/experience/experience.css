@@ -1,74 +1,180 @@
 .experience {
-  text-align: center;
-  padding: 10vh 0px;
-  padding-top: 13vh;
+  min-height: 100vh;
+  padding: var(--section-spacing) 0;
+  opacity: 0;
+  animation: fadeIn var(--transition-medium) forwards;
 }
 
-.skillCategory {
-  margin-left: 1vh;
-}
-
-.skillCard {
-  transition: opacity 0.3s ease-in-out;
-}
-
-.experienceCardContent {
-  max-width: 800px;
+.experience-container {
+  width: 100%;
+  max-width: var(--container-width);
   margin: 0 auto;
+  padding: 0 var(--container-padding);
+  text-align: center;
+}
+
+.experience h5 {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeIn var(--transition-medium) forwards;
+  animation-delay: 0.2s;
+}
+
+.experience h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeIn var(--transition-medium) forwards;
+  animation-delay: 0.4s;
 }
 
 .experienceSection {
-  background-color: var(--card-color);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 3vh;
-  margin-bottom: 2vh;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-medium);
+  opacity: 0;
+  animation: fadeIn var(--transition-medium) forwards;
+  animation-delay: 0.6s;
+}
+
+.experienceSection:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
 
 .experienceSection h3 {
   display: flex;
   align-items: center;
-  font-size: 20px;
-  margin-bottom: 1vh;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--first-color);
+}
+
+.skillCategory {
+  margin-left: 1rem;
+}
+
+.skillIcon {
+  font-size: 1.75rem;
   color: var(--first-color);
 }
 
 .experienceDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--grid-gap);
   text-align: left;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.experienceDetails article {
-  flex: 1 1 250px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+.skillCard {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all var(--transition-fast);
   display: flex;
   align-items: center;
-  padding: 10px;
-  border-radius: 8px;
-  background-color: rgb(217, 217, 217);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #343434;
+  gap: 1rem;
+}
+
+.skillCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--first-color);
+}
+
+.skillCard .icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.skillCard h4 {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.skillCard small {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 1024px) {
-  .experienceDetails article {
-    flex: 1 1 33%;
-    margin-right: 1vh;
+  .experienceDetails {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
   }
 
   .experienceSection {
-    width: 85%;
-    margin: 2vh auto;
+    padding: 1.5rem;
+  }
+
+  .experienceSection h3 {
+    font-size: 1.25rem;
+  }
+
+  .skillIcon {
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .experienceDetails article {
-    flex: 1 1 50%;
+@media screen and (max-width: 768px) {
+  .experience h5 {
+    font-size: 1.25rem;
+  }
+
+  .experience h2 {
+    font-size: 2rem;
+  }
+
+  .experienceDetails {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .skillCard {
+    padding: 0.75rem;
+  }
+
+  .skillCard .icon {
+    font-size: 1.25rem;
+  }
+
+  .skillCard h4 {
+    font-size: 0.9rem;
+  }
+
+  .skillCard small {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience h5 {
+    font-size: 1.1rem;
+  }
+
+  .experience h2 {
+    font-size: 1.75rem;
+  }
+
+  .experienceSection {
+    padding: 1rem;
+  }
+
+  .experienceDetails {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 0.75rem;
   }
 }
