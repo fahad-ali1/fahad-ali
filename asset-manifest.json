@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.450cc7c0.css",
+    "main.css": "/static/css/main.7e24a239.css",
     "main.js": "/static/js/main.d1bd96ab.js",
     "static/media/property-assessment-app.png": "/static/media/property-assessment-app.2347ba72414f134bc5cd.png",
     "static/media/personal-website-demo.png": "/static/media/personal-website-demo.5cfa95e664bbe7ff18d5.png",
@@ -13,11 +13,11 @@
     "static/media/coup-online-game.png": "/static/media/coup-online-game.e1fffbcaf566eb4f767a.png",
     "static/media/space-blaster-demo.png": "/static/media/space-blaster-demo.a9dcc4b9d030a719fee6.png",
     "index.html": "/index.html",
-    "main.450cc7c0.css.map": "/static/css/main.450cc7c0.css.map",
+    "main.7e24a239.css.map": "/static/css/main.7e24a239.css.map",
     "main.d1bd96ab.js.map": "/static/js/main.d1bd96ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.450cc7c0.css",
+    "static/css/main.7e24a239.css",
     "static/js/main.d1bd96ab.js"
   ]
 }
