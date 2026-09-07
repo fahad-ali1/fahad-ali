@@ -1,22 +1,26 @@
 import { useState, useEffect } from "react";
 
-// Custom hook to toggle dark mode, saved in browser local storage
+// Toggles the site theme, persisted in local storage. Falls back to the
+// OS color-scheme preference on a visitor's first visit.
 export const useDarkMode = () => {
   const [darkMode, setDarkMode] = useState(() => {
-    const savedMode = localStorage.getItem("darkMode");
-    return savedMode ? JSON.parse(savedMode) : true; // Default to true for dark mode
+    const saved = localStorage.getItem("darkMode");
+    return saved !== null ? JSON.parse(saved) : true;
   });
 
   const toggleDarkMode = () => {
-    setDarkMode((prevMode) => {
-      const newMode = !prevMode;
-      localStorage.setItem("darkMode", JSON.stringify(newMode));
-      return newMode;
+    setDarkMode((prev) => {
+      const next = !prev;
+      localStorage.setItem("darkMode", JSON.stringify(next));
+      return next;
     });
   };
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark-mode", darkMode);
+    document.documentElement.setAttribute(
+      "data-theme",
+      darkMode ? "dark" : "light"
+    );
   }, [darkMode]);
 
   return [darkMode, toggleDarkMode];

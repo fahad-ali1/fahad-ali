@@ -1,0 +1,39 @@
+.contact-inner {
+  text-align: center;
+  padding: 2rem 0 3rem;
+}
+
+.contact-inner .section-heading {
+  display: inline-block;
+}
+
+.contact-copy {
+  max-width: 46ch;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.contact-actions {
+  margin-top: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.contact-secondary:hover {
+  color: var(--text-primary);
+}

@@ -1,31 +1,31 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar/navbar.jsx";
-import Header from "./components/header/Header.jsx";
-import Experience from "./components/experience/experience.jsx";
-import Portfolio from "./components/portfolio/portfolio.jsx";
+import TopBar from "./components/console/TopBar";
+import Hero from "./components/console/Hero";
+import Experience from "./components/console/Experience";
+import Skills from "./components/console/Skills";
+import Projects from "./components/console/Projects";
+import Education from "./components/console/Education";
+import Contact from "./components/console/Contact";
 import Footer from "./components/footer/footer.jsx";
-import { useDarkMode } from "./hooks/useDarkMode"; 
+import { useDarkMode } from "./hooks/useDarkMode";
 import "./App.css";
 
 function App() {
-  const [darkMode, toggleDarkMode] = useDarkMode();  
+  const [darkMode, toggleDarkMode] = useDarkMode();
 
   return (
-    <Router>
-      <div className={darkMode ? "App dark-mode" : "App"}>
-        <button className="darkmodeToggle" onClick={toggleDarkMode}>
-          {darkMode ? "☀️" : "🌙"}
-        </button>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Header />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="App">
+      <TopBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <main>
+        <Hero />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
