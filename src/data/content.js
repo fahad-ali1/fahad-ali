@@ -56,7 +56,6 @@ export const education = {
 export const skills = {
   "Languages & Frameworks": [
     "Python",
-    "React.js",
     "Node.js",
     "TypeScript",
     "SQL",

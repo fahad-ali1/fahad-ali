@@ -5,6 +5,18 @@ import { featuredProjects } from "../../data/content";
 import { projects } from "../../data/projects";
 import "./Projects.css";
 
+const projectImages = import.meta.glob("../../assets/*.{png,jpg,jpeg}", {
+  eager: true,
+  import: "default",
+});
+
+const getProjectImage = (filename) => {
+  const match = Object.entries(projectImages).find(([path]) =>
+    path.endsWith(`/${filename}`)
+  );
+  return match?.[1];
+};
+
 const ProjectLinks = ({ githubUrl, liveUrl }) => {
   if (!githubUrl && !liveUrl) return null;
   return (
@@ -40,7 +52,7 @@ const Projects = () => {
               media={
                 project.image && (
                   <img
-                    src={require(`../../assets/${project.image}`)}
+                    src={getProjectImage(project.image)}
                     alt={project.altText}
                     loading="lazy"
                   />
@@ -83,7 +95,7 @@ const Projects = () => {
             <article key={project.id} className="project-card">
               <div className="project-card-image">
                 <img
-                  src={require(`../../assets/${project.image}`)}
+                  src={getProjectImage(project.image)}
                   alt={project.altText}
                   loading="lazy"
                 />
