@@ -1,25 +1,25 @@
 {
-  "short_name": "Fahad's Portfolio",
-  "name": "Fahad's Personal Portfolio",  
+  "short_name": "Fahad Ali",
+  "name": "Fahad Ali — Junior Software Developer",
   "icons": [
     {
-      "src": "fahad-favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "favicon_io/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
       "type": "image/x-icon"
     },
     {
-      "src": "fahad-logo192.png",
+      "src": "favicon_io/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "fahad-logo512.png",
+      "src": "favicon_io/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#121212",
+  "background_color": "#121212"
 }
