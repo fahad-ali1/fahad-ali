@@ -1,6 +1,6 @@
 export const profile = {
   name: "Fahad Ali",
-  role: "Junior Software Developer",
+  role: "Software Developer",
   location: "Canada",
 };
 
